@@ -1,0 +1,1 @@
+console.log("🎬 Plataforma de Películas - Funcionando!");
