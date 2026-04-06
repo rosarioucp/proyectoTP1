@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "types": ["node", "jest"],
+    "skipLibCheck": true,
     "target": "ES6",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
