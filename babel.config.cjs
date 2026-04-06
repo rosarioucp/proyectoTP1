@@ -4,7 +4,6 @@ module.exports = {
     '@babel/preset-typescript',
   ],
   plugins: [
-    // Este plugin arregla el error de los archivos .js que ves en la terminal
     [
       'babel-plugin-replace-import-extension',
       {
