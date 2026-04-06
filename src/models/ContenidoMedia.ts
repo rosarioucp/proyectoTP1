@@ -1,4 +1,4 @@
-import { IReproducible, ICalificable } from "../interfaces/IContenido";
+import { IReproducible, ICalificable } from "../interfaces/IContenido.js";
 
 export abstract class ContenidoMedia implements IReproducible, ICalificable {
     id: number;
@@ -20,9 +20,13 @@ reproducir(): string {
 pausar(): string {
     return `Pausado: ${this.titulo}`;
 }
+calificar(puntaje: number): void {
+    this.calificaciones.push(puntaje);
+}
 obtenerPuntaje(): number {
     if (this.calificaciones.length === 0) return 0;
     const suma = this.calificaciones.reduce((a, b) => a + b, 0);
     return suma / this.calificaciones.length;   
 }
 }
+
